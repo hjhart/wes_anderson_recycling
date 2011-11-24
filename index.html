@@ -2,7 +2,7 @@
 <html lang="en"> 
     <head> 
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
-        <title>The HBO Recycling Program</title> 
+        <title>The Wes Anderson Recycling Program</title> 
         
         <link rel="stylesheet" href="recycle.css" type="text/css" media="screen">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
@@ -22,26 +22,14 @@
         
         <script type="text/javascript" src="http://use.typekit.com/ran8aft.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-        
-        <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-26336682-1']);
-            _gaq.push(['_trackPageview']);
-            
-            (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-        </script>
-    </head> 
+            </head> 
     <body>
-        <a href="http://github.com/zgrossbart/hborecycling" id="forkme"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+        <a href="http://github.com/hjhart/wes_anderson_recycling" id="forkme"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
   
-        <h1>The HBO Recycling Program</h1>
+        <h1>The Wes Anderson Recycling Program</h1>
         
         <p>
-            Actors who have appeared in three or more episodes of multiple scripted, live-action, original, HBO series since OZ (excluding miniseries).  Click the dots to highlight connections.  For example, try <a href="#" id="deadwoodjohn">Deadwood and John from Cincinnatti</a>.
+            Actors who have appeared in more than one Wes Anderson movie. For example, try clicking on both <a href="#" id="natlieportman">Darjeeling Limited and Hotel Chevalier.</a>.
         </p>
         
         <div id="mainText">
@@ -49,36 +37,8 @@
                 This page requires HTML5 canvas and JavaScript.
             </p>
             
-            <canvas id="canvas" width=1000></canvas>
-            
-            <p>
-            This page is an interactive version of the diagram from <a href="http://www.grantland.com/story/_/id/6635619/the-hbo-recycling-program">The HBO Recycling Program</a>.  It shows you the actors who've worked in multiple HBO shows and makes it clear how often HBO works with the same actors.  The image is pretty and interesting to look at, but it's difficult to read.  
-            </p>
-            
-            <p>
-            Try finding the one actor who's worked on Oz, The Sopranos, and The Wire.  I can't.  The idea was awesome, but the implementation needed a little work.  
-            </p>
-            
-            <p>
-            This project is all about creating a new interactive version of that image which makes it easier to use.  I do that by highlighting the connections and making it easy to see the <a href="http://en.wikipedia.org/wiki/Intersection_(set_theory)">intersections</a> of our different sets.  When you select multiple shows it will highlight the actors which were in all of the shows and if you select multiple actors it will show you all the shows they have in common.
-            </p>
-            
-            <p>
-            Finding out <a href="#" class="actorLink">John Doman</a> has been on Oz, The Sopranos, and The Wire or that <a href="#" class="actorLink">Laila Robins</a> was a trendy socialite in New York and Tony Soprano's mother in New Jersey is easy with intersections.
-            </p>
-            
-            <p>
-            This infographic is made with <a href="http://www.paperjs.org">PaperJS</a>, <a href="http://documentcloud.github.com/underscore/">underscore.js</a>, and a little <a href="http://jquery.com/">JQuery</a>.
-            </p>
-            
-            <p>
-            <a href="http://www.fastcodesign.com/">Fast Company Design</a> featured the HBO Recycling Program as the <a href="http://www.fastcodesign.com/1665124/infographic-of-the-day-hbo-recycles-the-same-actors-again-and-again">Infographic of the Day</a>.
-            </p>
-            
-            <p>Research: Sam Schube and Danny Savitzky</p>
-            <p>Based on a visualization by Craig Robinson</p>
-            <p>First featured in <a href="http://www.grantland.com/story/_/id/6635619/the-hbo-recycling-program">The HBO Recycling Program</a> by <a href="http://www.grantland.com/search/_/query/andy-greenwald">Andy Greenwald</a></p>
-            <p>Created by <a href="http://www.zackgrossbart.com/blog/more-about-zack/">Zack Grossbart</a></p>
+            <canvas id="canvas" width="1000"></canvas>
+
         </div>
     </body>
 </html>

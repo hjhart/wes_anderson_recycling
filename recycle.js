@@ -381,7 +381,7 @@ jQuery(document).ready(function() {
     */
     var actors = _.map(actorNames, function (name) {
         var actor = rel.createActor(name, point.clone());
-        point.y += 16;
+        point.y += 25;
         return actor;
     });
 
@@ -393,6 +393,9 @@ jQuery(document).ready(function() {
         point.y += 46;
         return show;
     });
+
+    var showY = point.y;
+
     /*
     * Now we map each actor to the shows they are in.  
     */
@@ -407,7 +410,7 @@ jQuery(document).ready(function() {
     /*
     * Then we set the height of our view
     */
-    view.viewSize = [1000, actorY + 50];
+    view.viewSize = [1000, showY + 50];
 
     /*
     * The last step is to draw each actor which draws the shows
@@ -438,13 +441,14 @@ jQuery(document).ready(function() {
             
         });
     });
-    $('#deadwoodjohn').click(function(evt) {
+
+    $('#natlieportman').click(function(evt) {
         evt.preventDefault();
         rel.clearSelection();
     
         _.each(shows, function (show) {
-            if (show.name === 'Deadwood' ||
-            show.name === 'John from Cincinnati') {
+            if (show.name === 'Darjeeling Limited' ||
+            show.name === 'Hotel Chevalier') {
             rel.toggleSelectedShow(show);
             
             }
